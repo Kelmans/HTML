@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>?</title>
+    <link href="css/test.css" rel="stylesheet">
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#header").removeClass("default");
+            $(window).scroll(function(){
+                if ($(this).scrollTop() > 20){
+                    $("#header").addClass("default").fadeIn('fast');
+                } else{
+                    $("#header").removeClass("default").fadeIn('fast');
+                };
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="header__top" >
+    <header id="header">
+        <div class="header__logo"> <img src="1.jpg" width="240" height="56"></div>
+        <nav id="menu" class="header__menu">
+            <a href="#box1" class="bottonOne">о нас</a>
+            <a href="#box2" class="bottonTwo">отзывы</a>
+            <a href="#box3" class="bottonThree">галерея</a>
+            <a href="#box4" class="bottonFour">контакты	</a>
+        </nav>
+        <div class="header__previa">
+        </div>
+    </header>
+</div>
+<div id="box1" class="content__top">
+    <div class="content">
+        <div id="slider" class="slarder">
+            <div id="slider_box">
+                <ul>
+                    <li id="img_1"> </li>
+                    <li id="img_2"></li>
+                    <li id="img_3"></li>
+                    <li id="img_4"></li>
+                    <li id="img_5"></li>
+
+                </ul>
+            </div>
+            <!--        slider_box-->
+            <div id="nav_slider">
+                <div id="left_nav"></div>
+                <div id="right_nav"></div>
+            </div>
+        </div>
+        <div class="otzivs">
+            <div class="zagolovokOtziv">
+                <h1>ОТЗЫВЫ</h1>
+            </div>
+            <hr>
+            <div id="box2" class="otziv">
+                <div class="rilOtziv">
+                    <div class="fotootziv"> ФОТО</div>
+                    <div class="textotziv"> НАДПИСЬ </div>
+                </div>
+                <div class="rilOtziv">
+                    <div class="fotootziv"> ФОТО</div>
+                    <div class="textotziv"> НАДПИСЬ </div>
+                </div>
+                <div class="rilOtziv">
+                    <div class="fotootziv"> ФОТО</div>
+                    <div class="textotziv"> НАДПИСЬ </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="box3" class="nashiRaboty">
+
+        </div>
+
+    </div>
+</div>
+<dir id="box4" class="footer__top">
+    <div  class="footer">
+        Контактная информация
+        номер телефона
+        маил
+    </div>
+</dir>
+<script>
+    function Slider(width_li,margin_right_li,col_view_img){
+        var step=width_li+margin_right_li,
+            slider_box_with=col_view_img*step-margin_right_li,
+            $col_img=$("#slider_box>ul>li").length,
+            col_main_left=0,
+            max_col_main_left=$col_img*step;
+        $("#slider_box").width(slider_box_with);
+        $("#slider_box>ul>li").width(width_li).css("margin-right",margin_right_li);
+        $("#left_nav").click(function(){
+            if(-col_main_left==max_col_main_left-col_view_img*step){
+                col_main_left=0;
+            } else{
+                col_main_left=col_main_left-step;
+            }
+            $("#slider_box>ul").css("margin-left",col_main_left+"px");
+        });
+        $("#right_nav").click(function(){
+            if(col_main_left==0){
+                col_main_left=-max_col_main_left+col_view_img*step;
+            } else{
+                col_main_left=col_main_left+step;
+            }
+            $("#slider_box>ul").css("margin-left",col_main_left+"px");
+        });
+    }
+    $(Slider(280,5,4));
+</script>
+</body>
+</html>
