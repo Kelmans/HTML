@@ -73,12 +73,7 @@ header {
     margin auto;
     text-align: center;
 }
-.otziv{
-    width: 100%;
-    background: #D7D7D7;
-    height: 500px;
 
-}
 .content {
     background: #E5FBFF;
     height: 550px;
@@ -180,7 +175,7 @@ header {
 #slider_box {
     overflow: hidden;
     position: relative;
-    left: 38px;
+    left: 41px;
 
 }
 
@@ -189,11 +184,12 @@ header {
     background: url(img/2.png);
     float: left;
 
+
 }
 
 #nav_slider>div {
 
-    width: 40px;
+    width: 50px;
     height: 50px;
 }
 
@@ -219,4 +215,45 @@ header {
 
 #img_11 {
     background-color: darkgreen;
+}
+
+.box2{
+    width: 100%;
+    background: #D7D7D7;
+    height: 360px;
+    overflow: hidden;
+}
+#show-more{
+    background: #381EA6;
+    color: #fff;
+    display: block;
+    width: 140px;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+}
+.rilOtzivblur{
+    margin-top: 15px;
+    background: #DCC0C0;
+    height: 100px;
+    opacity: .3;
+
+}
+.open{
+    min-height: 500px;
+    opacity: none;
+}
+.nashiRaboty{
+    height: 450px;
+    background: #FCE0E0;
+}
+.fotobox{
+    text-align: center;
+    height: 200px;
+    width: 24%;
+    float: left;
+    background: url(img/5.jpg);
+    margin: 5px;
 }

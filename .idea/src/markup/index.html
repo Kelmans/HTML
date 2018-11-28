@@ -5,6 +5,7 @@
     <title>?</title>
     <link href="css/test.css" rel="stylesheet">
     <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="test.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
             $("#header").removeClass("default");
@@ -56,12 +57,16 @@
                 <h1>ОТЗЫВЫ</h1>
             </div>
             <hr>
-            <div id="box2" class="otziv">
+            <div id="box2" class="box2">
                 <div class="rilOtziv">
                     <div class="fotootziv"> ФОТО</div>
                     <div class="textotziv"> НАДПИСЬ </div>
                 </div>
                 <div class="rilOtziv">
+                    <div class="fotootziv"> ФОТО</div>
+                    <div class="textotziv"> НАДПИСЬ </div>
+                </div>
+                <div class="rilOtzivblur">
                     <div class="fotootziv"> ФОТО</div>
                     <div class="textotziv"> НАДПИСЬ </div>
                 </div>
@@ -71,8 +76,33 @@
                 </div>
 
             </div>
+            <a id="show-more">Show More</a>
         </div>
         <div id="box3" class="nashiRaboty">
+            <dir class="fotobox js-button-campaign">
+
+            </dir>
+            <dir class="fotobox js-button-campaign">
+
+            </dir>
+            <dir class="fotobox js-button-campaign">
+
+            </dir>
+            <dir class="fotobox js-button-campaign">
+
+            </dir>
+            <dir class="fotobox js-button-campaign">
+
+            </dir>
+            <dir class="fotobox js-button-campaign">
+
+            </dir>
+            <dir class="fotobox js-button-campaign">
+
+            </dir>
+            <dir class="fotobox js-button-campaign">
+
+            </dir>
 
         </div>
 
@@ -85,6 +115,17 @@
         маил
     </div>
 </dir>
+<script type="text/javascript">
+
+    $('#show-more').click(function() {
+
+        $(".box2").toggleClass('open');
+
+    });
+
+
+
+</script>
 <script>
     function Slider(width_li,margin_right_li,col_view_img){
         var step=width_li+margin_right_li,
@@ -111,7 +152,7 @@
             $("#slider_box>ul").css("margin-left",col_main_left+"px");
         });
     }
-    $(Slider(280,5,4));
+    $(Slider(275,5,4));
 </script>
 </body>
 </html>
