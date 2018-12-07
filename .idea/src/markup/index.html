@@ -6,55 +6,38 @@
     <link href="css/test.css" rel="stylesheet">
     <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="test.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $("#header").removeClass("default");
-            $(window).scroll(function(){
-                if ($(this).scrollTop() > 10){
-                    $("#header").addClass("default").fadeIn('fast');
-                } else{
-                    $("#header").removeClass("default").fadeIn('fast');
-                };
-            });
-        });
-    </script>
 </head>
 <body>
 <div class="header__fon" >
-    <div class="ch">
+    <div class="wraper">
         <header id="header">
             <div class="header__logo"> <img src="css/img/logo.png" width="240" height="56"></div>
             <nav id="menu" class="header__menu">
-                <a href="#box1" class="bottonOne">о нас</a>
-                <a href="#box2" class="bottonTwo">отзывы</a>
-                <a href="#box3" class="bottonThree">галерея</a>
-                <a href="#box4" class="bottonFour">контакты	</a>
+                <a href="#box1" class="header__menu-item">о нас</a>
+                <a href="#box2" class="header__menu-item">отзывы</a>
+                <a href="#box3" class="header__menu-item">галерея</a>
+                <a href="#box4" class="header__menu-item">контакты	</a>
             </nav>
-            <div class="header__previa">
-            </div>
         </header>
     </div>
 </div>
 <div id="box1" class="content__fon">
     <div class="content">
-        <div class="banner"> <img src="1.jpg" width="1180" height="400">
-
+        <div class="content__description"><p>
+            Ветеринарная клиника Зоовет решит любую проблему, если ваш питомец заболел или ему требуется квалифицированная врачебная помощь. Мы полностью отвечаем современным стандартам.
+        </p></div>
+        <div class="banner"> <img src="11.jpeg" width="1180" height="500">
         </div>
-
-        <hr>
         <div id="carousel" class="carousel">
             <button class="arrow prevs">⇦</button>
             <div class="gallery">
                 <ul class="images">
-                    <li><img src="5.jpg"></li>
-                    <li><img src="5.jpg"></li>
-                    <li><img src="5.jpg"></li>
-                    <li><img src="3.jpg"></li>
-                    <li><img src="5.jpg"></li>
-                    <li><img src="3.jpg"></li>
-                    <li><img src="5.jpg"></li>
-                    <li><img src="3.jpg"></li>
-                    <li><img src="5.jpg"></li>
+                    <li><img src="11111.png"></li>
+                    <li><img src="222.png"></li>
+                    <li><img src="333.png"></li>
+                    <li><img src="444.png"></li>
+                    <li><img src="555.png"></li>
+                    <li><img src="666.png"></li>
                     <li><img src="3.jpg"></li>
                 </ul>
             </div>
@@ -62,30 +45,32 @@
         </div>
     </div>
 </div>
-<div class="otziv__fon">
+<div id="box2" class="otziv__fon">
     <div class="otzivs content">
         <div class="zagolovokOtziv">
             <h1>ОТЗЫВЫ</h1>
         </div>
-        <hr>
-        <div id="box2" class="box2">
+        <div  class="box2">
             <div class="rilOtziv">
-                <div class="fotootziv"> ФОТО</div>
-                <div class="textotziv"> НАДПИСЬ </div>
+                <div class="fotootziv"> <img src="ava.jpg" width="100" height="100"></div>
+                <div class="textotziv"> <h5>Юлия 01-12-2018</h5>
+                    <p>Добрый день. Не рекомендую данную клинику. Я предварительно записалась по телефону на осмотр кота 01.12.2018 на 10.30. Ко врачу пустили с опозданием в 20 минут. Все эти 20 минут кот кричал в переноске. Врач не представился и осмотрел кота. Врач не сказал, здоров ли мой кот, и не сказал каким образом мне предоставят результаты анализов. При оплате данных услуг у администратора мне также не сказали ничего относительно даты и способа получения анализов. У администратора постоянно была очередь.</p> </div>
             </div>
             <div class="rilOtziv">
-                <div class="fotootziv"> ФОТО</div>
-                <div class="textotziv"> НАДПИСЬ </div>
+                <div class="fotootziv"> <img src="ava.jpg" width="100" height="100"></div>
+                <div class="textotziv"> <h5>Наталья 27-11-2018</h5>
+                    Огромная благодарность доктору Мягкову Ивану Игоревичу за чуткое отношение к нашей собачке Снеже и к нам в 3 часа утра. </div>
             </div>
             <div class="rilOtzivblur">
-                <div class="fotootziv"> ФОТО</div>
-                <div class="textotziv"> НАДПИСЬ </div>
+                <div class="fotootziv"> <img src="ava.jpg" width="100" height="100"></div>
+                <div class="textotziv"> <h5>Лариса 06-09-2018</h5>
+                    Хочу выразить благодарность врачу ХОРОШИЛОВУ МИХАИЛУ ЮРЬЕВИЧУ,! Михаил Юрьевич профессионал высокого уровня, хорошо лечил нашего кота Васю, всегда был готов подсказать и проконсультировать. Врач очень добрый и чуткий. Спасибо Вам большое за работу, желаем Вам всего самого доброго! </div>
             </div>
             <div class="rilOtziv">
-                <div class="fotootziv"> ФОТО</div>
-                <div class="textotziv"> НАДПИСЬ </div>
+                <div class="fotootziv"> <img src="ava.jpg" width="100" height="100"></div>
+                <div class="textotziv"> <h5>Александра 27-08-2018</h5>
+                    В Новогиреево работает замечательный врач Самонов Николай Викторович. Моя собачуля чужих к себе не подпускает, а он нашей с ней общий язык и все процедуры провел безболезненно, для обоих ))) Спасибо! </div>
             </div>
-
         </div>
         <a id="show-more">Show More</a>
     </div>
@@ -93,159 +78,40 @@
 <div class="nashirab__fon">
     <div id="box3" class="nashiRaboty content">
         <dir  class="fotobox ">
-
-            <!-- <a id="bottom_popap" href="" > Фото по работе</a> -->
             <div class="link_group">
                 <a id="2" class="show_popup bottom_popap" rel="photo_win" href="">Галеasрея</a>
-                <div class="popup photo_win">
-                    <a class="close" href="#">Close</a>
-                    <h2>Галерея</h2>
-
-                    <div  class="img_wrap">
-                        <div class="prev n"><a href="#">Prev</a></div>
-                        <div class="slider">
-                            <div class="img curry">1</div>
-                            <div class="img">2</div>
-                            <div class="img">3</div>
-
+                <div class="popup-wrapper">
+                    <div class="popup photo_win">
+                        <a class="close" href="#">Close</a>
+                        <h2>Галерея</h2>
+                        <div  class="img_wrap">
+                            <div class="prev n"><a href="#">Prev</a></div>
+                            <div class="slider">
+                                <div class="img curry">1</div>
+                                <div class="img">2</div>
+                                <div class="img">3</div>
+                            </div>
+                            <div class="next n"><a href="#">Next</a></div>
                         </div>
-                        <div class="next n"><a href="#">Next</a></div>
                     </div>
                 </div>
             </div>
         </dir>
-
-
-        <!-- <div id="slider" class="slider_wrap">		 -->
-        <!-- <img alt="Image 1" class="active" src="/images/01.jpg" /> -->
-        <!-- <img alt="Image 2" src="/images/02.jpg" /> -->
-        <!-- <img alt="Image 3" src="/images/03.jpg" /> -->
-        <!-- </div> -->
-        <!--	<dir  class="fotobox ">
-                <div class="link_group">
-                    <a id="1" class="show_popup bottom_popap" rel="photo_win" href="">Галерея</a>
-                <div class="popup photo_win">
-                    <a class="close" href="#">Close</a>
-                    <h2>Галерея</h2>
-                        <div  class="img_wrap">
-                            <div class="prev n"><a href="#">Prev</a></div>
-                                <div class="slider">
-                                    <div class="img curry">1</div>
-                                    <div class="img">2</div>
-                                    <div class="img">3</div>
-                                </div>
-                                <div class="next n"><a href="#">Next</a></div>
-                        </div>
-                </div>
-                </div>
-            </dir>
-
-
-
-        </div>-->
-
     </div>
 </div>
-</div>
+
 <dir id="box4" class="footer__top">
     <div  class="footer">
-        Контактная информация
-        номер телефона
-        маил
+        <div class="footer__description"><h4>Контакты</h4><p>vk.com/id??1437147</p></div>
+        <div class="footer__description"><h4>Телефон</h4><p>89397777777</p></div>
+        <dir class="footer__description"><h4>Почта</h4><p>zoovet@mail.ru</p></dir>
     </div>
 </dir>
+
 <script type="text/javascript">
-
-    $('#show-more').click(function() {
-
-        $(".box2").toggleClass('open');
-        $(".rilOtzivblur").toggleClass('open_opacity');
-
-    });
-
 
 
 </script>
-
-<script type="text/javascript">
-    $(function () {
-        //script for popups
-        $('a.show_popup').click(function () {
-            var popup = $(elem.target).find('.popup');
-            $('div.'+$(this).attr("rel")).fadeIn(500);
-            $("body").append("<div id='overlay'></div>");
-            $('#overlay').show().css({'filter' : 'alpha(opacity=80)'});
-            return false;
-        });
-        $('a.close').click(function () {
-            $(this).parent().fadeOut(100);
-            $('#overlay').remove('#overlay');
-            return false;
-        });
-    });
-</script>
-<script type="text/javascript">
-    //script carousel for popups
-    $('.next').click(function){
-        var popup = $(elem.target).find('.popup');
-        var currentImage = $('.img.curry');
-        var currentImageIndex = currentImage.index();
-        var nextImageIndex = currentImageIndex+1;
-        var nextImage = $('.img').eq(nextImageIndex);
-        currentImage.fadeOut(1000);
-        currentImage.removeClass('curry');
-
-        if(nextImageIndex == ($('.img:last').index()+1)){
-            $('.img').eq(0).fadeIn(1000);
-            $('.img').eq(0).addClass('curry');
-        } else{
-            nextImage.fadeIn(1000);
-            nextImage.addClass('curry');
-        }
-    });
-    $('.prev').click(function(){
-        var currentImage = $('.img.curry');
-        var currentImageIndex = $('.img.curry').index();
-        var prevImageIndex = currentImageIndex-1;
-        var prevImage = $('.img').eq(prevImageIndex);
-
-        currentImage.fadeOut(1000);
-        currentImage.removeClass('curry');
-        prevImage.fadeIn(1000);
-        prevImage.addClass('curry');
-    })
-</script>
-<script type="text/javascript">
-    $('.link_group').click()
-
-</script>
-<script type="text/javascript">
-    /* конфигурация */
-    var width = 365; // ширина изображения
-    var count = 3; // количество изображений
-
-    var carousel = document.getElementById('carousel');
-    var list = carousel.querySelector('ul');
-    var listElems = carousel.querySelectorAll('li');
-
-    var position = 0; // текущий сдвиг влево
-
-    carousel.querySelector('.prevs').onclick = function() {
-        // сдвиг влево
-        // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
-        position = Math.min(position + width * count, 0)
-        list.style.marginLeft = position + 'px';
-    };
-
-    carousel.querySelector('.nexts').onclick = function() {
-        // сдвиг вправо
-        // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
-        position = Math.max(position - width * count, -width * (listElems.length - count));
-        list.style.marginLeft = position + 'px';
-    };
-</script>
-
-
 </body>
 </html>
 
