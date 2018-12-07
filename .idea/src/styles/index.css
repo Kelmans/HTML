@@ -287,7 +287,7 @@ header {
     height: 200px;
     width: 24%;
     float: left;
-    background: url(img/5.jpg);
+    background: url(../img/5.jpg);
     margin: 5px;
 }
 
@@ -338,23 +338,23 @@ header {
 }
 
 #img_1 {
-    background: url(img/6.jpg);
+    background: url(../img/6.jpg);
 }
 
 #img_2 {
-    background: url(img/5.jpg);
+    background: url(../img/5.jpg);
 }
 
 #img_3 {
-    background: url(img/5.jpg);
+    background: url(../img/5.jpg);
 }
 
 #img_4 {
-    background: url(img/5.jpg);
+    background: url(../img/5.jpg);
 }
 
 #img_5 {
-    background: url(img/6.jpg);
+    background: url(../img/6.jpg);
 }
 
 .bottom_popap{
@@ -392,7 +392,7 @@ header {
     position:absolute;
     top:10px;
     right:10px;
-    background:url(img/close.png) no-repeat;
+    background:url(../img/close.png) no-repeat;
 }
 .photo_win {
     margin-left: -275px;
