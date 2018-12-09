@@ -18,7 +18,9 @@ a:hover{
     background: #eeeeee;
 }
 header {
-
+    top:0;
+    position: fixed;
+    background:#ffff;
     height: 56px;
     z-index: 1;
     width: 1200px;
@@ -142,18 +144,7 @@ header {
     right: 7px;
 }
 
-.popup-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height:100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
-    z-index: 20;
-}
+
 
 .gallery {
     width: 100%;
@@ -287,7 +278,7 @@ header {
     height: 200px;
     width: 24%;
     float: left;
-    background: url(../img/5.jpg);
+    background: url(img/5.jpg);
     margin: 5px;
 }
 
@@ -338,23 +329,23 @@ header {
 }
 
 #img_1 {
-    background: url(../img/6.jpg);
+    background: url(img/6.jpg);
 }
 
 #img_2 {
-    background: url(../img/5.jpg);
+    background: url(img/5.jpg);
 }
 
 #img_3 {
-    background: url(../img/5.jpg);
+    background: url(img/5.jpg);
 }
 
 #img_4 {
-    background: url(../img/5.jpg);
+    background: url(img/5.jpg);
 }
 
 #img_5 {
-    background: url(../img/6.jpg);
+    background: url(img/6.jpg);
 }
 
 .bottom_popap{
@@ -384,18 +375,20 @@ header {
     font:bold 18px/32px Arial, san-serif;
 }
 
-.popup a.close {
-    width:16px;
-    height:16px;
-    display:block;
-    text-indent:-9999px;
-    position:absolute;
-    top:10px;
-    right:10px;
-    background:url(../img/close.png) no-repeat;
+.popup__close {
+    width: 16px;
+    height: 16px;
+    display: block;
+    text-indent: -9999px;
+    /* position: absolute; */
+    float: right;
+    top: 10px;
+    right: 10px;
+    background: url(img/close.png) no-repeat;
 }
+
 .photo_win {
-    margin-left: -275px;
+
     width:1000px;
 }
 .img_wrap {
@@ -468,7 +461,19 @@ header {
     right: 400px;
     float: right;
 }
-.popup__wrapper_flex{
+.popup-wrapper.popup__wrapper_flex{
     display: flex;
+
 }
 /*карусель!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.popup-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 20;
+}
