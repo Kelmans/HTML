@@ -19,7 +19,7 @@ a:hover{
 }
 header {
     top:0;
-    position: fixed;
+
     background:#ffff;
     height: 56px;
     z-index: 1;
@@ -28,7 +28,10 @@ header {
 
 }
 .header__fon{
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
     background: #ffffff;
     margin-bottom: 5px;
 }
