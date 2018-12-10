@@ -9,9 +9,9 @@
 </head>
 <body>
 <div class="header__fon" >
-    <div class="wraper">
+    <div class="wrapper">
         <header id="header">
-            <div class="header__logo"> <img src="../img/logo.png" width="240" height="56"></div>
+            <div class="header__logo"> <img src="css/img/logo.png" width="240" height="56"></div>
             <nav id="menu" class="header__menu">
                 <a href="#box1" class="header__menu-item">о нас</a>
                 <a href="#box2" class="header__menu-item">отзывы</a>
@@ -26,22 +26,22 @@
         <div class="content__description"><p>
             Ветеринарная клиника Зоовет решит любую проблему, если ваш питомец заболел или ему требуется квалифицированная врачебная помощь. Мы полностью отвечаем современным стандартам.
         </p></div>
-        <div class="banner"> <img src="../img/11.jpeg" width="1180" height="500">
+        <div class="content__banner"> <img src="11.jpeg" width="1180" height="500">
         </div>
-        <div id="carousel" class="carousel">
-            <button class="arrow prevs">⇦</button>
+        <div id="carousel" class="content__carousel">
+            <button class="content__carousel-arrow prevs">⇦</button>
             <div class="gallery">
                 <ul class="images">
-                    <li><img src="../img/11111.png"></li>
-                    <li><img src="../img/222.png"></li>
-                    <li><img src="../img/333.png"></li>
-                    <li><img src="../img/444.png"></li>
-                    <li><img src="../img/555.png"></li>
-                    <li><img src="../img/666.png"></li>
-                    <li><img src="../img/3.jpg"></li>
+                    <li><img src="11111.png"></li>
+                    <li><img src="222.png"></li>
+                    <li><img src="333.png"></li>
+                    <li><img src="444.png"></li>
+                    <li><img src="555.png"></li>
+                    <li><img src="666.png"></li>
+                    <li><img src="3.jpg"></li>
                 </ul>
             </div>
-            <button class="arrow nexts">⇨</button>
+            <button class="content__carousel-arrow nexts">⇨</button>
         </div>
     </div>
 </div>
@@ -50,72 +50,220 @@
         <div class="zagolovokOtziv">
             <h1>ОТЗЫВЫ</h1>
         </div>
-        <div  class="box2">
+        <div  class="otziv">
             <div class="rilOtziv">
-                <div class="fotootziv"> <img src="../img/ava.jpg" width="100" height="100"></div>
+                <div class="fotootziv"> <img src="ava.jpg" width="100" height="100"></div>
                 <div class="textotziv"> <h5>Юлия 01-12-2018</h5>
                     <p>Добрый день. Не рекомендую данную клинику. Я предварительно записалась по телефону на осмотр кота 01.12.2018 на 10.30. Ко врачу пустили с опозданием в 20 минут. Все эти 20 минут кот кричал в переноске. Врач не представился и осмотрел кота. Врач не сказал, здоров ли мой кот, и не сказал каким образом мне предоставят результаты анализов. При оплате данных услуг у администратора мне также не сказали ничего относительно даты и способа получения анализов. У администратора постоянно была очередь.</p> </div>
             </div>
             <div class="rilOtziv">
-                <div class="fotootziv"> <img src="../img/ava.jpg" width="100" height="100"></div>
+                <div class="fotootziv"> <img src="ava.jpg" width="100" height="100"></div>
                 <div class="textotziv"> <h5>Наталья 27-11-2018</h5>
                     Огромная благодарность доктору Мягкову Ивану Игоревичу за чуткое отношение к нашей собачке Снеже и к нам в 3 часа утра. </div>
             </div>
             <div class="rilOtzivblur">
-                <div class="fotootziv"> <img src="../img/ava.jpg" width="100" height="100"></div>
+                <div class="fotootziv"> <img src="ava.jpg" width="100" height="100"></div>
                 <div class="textotziv"> <h5>Лариса 06-09-2018</h5>
                     Хочу выразить благодарность врачу ХОРОШИЛОВУ МИХАИЛУ ЮРЬЕВИЧУ,! Михаил Юрьевич профессионал высокого уровня, хорошо лечил нашего кота Васю, всегда был готов подсказать и проконсультировать. Врач очень добрый и чуткий. Спасибо Вам большое за работу, желаем Вам всего самого доброго! </div>
             </div>
             <div class="rilOtziv">
-                <div class="fotootziv"> <img src="../img/ava.jpg" width="100" height="100"></div>
+                <div class="fotootziv"> <img src="ava.jpg" width="100" height="100"></div>
                 <div class="textotziv"> <h5>Александра 27-08-2018</h5>
                     В Новогиреево работает замечательный врач Самонов Николай Викторович. Моя собачуля чужих к себе не подпускает, а он нашей с ней общий язык и все процедуры провел безболезненно, для обоих ))) Спасибо! </div>
             </div>
         </div>
-        <a id="show-more">Show More</a>
+        <input type="button"  name="buttonShow" class="show-more" value="Show More" onclick="dawn()"/>
     </div>
 </div>
 <div class="nashirab__fon">
     <div id="box3" class="nashiRaboty content">
         <dir  class="fotobox ">
             <div class="link_group">
-                <div  class="show_popup bottom_popap"  href="">Галеasрея</div>
-                <!-- 	ТУТ НАЧИНАЕТСЯ ПОПАП -->
+                <div  class="show_popup bottom_popap"  href="">Коты</div>
                 <div class="popup-wrapper">
                     <div class="popup photo_win">
                         <div class="popup__close" href="#">Close</div>
                         <h2>Галерея</h2>
-
-                        <!-- <div  class="img_wrap">
-                            <div class="prev n"><a href="#">Prev</a></div>
-                            <div class="slider">
-                                <div class="img curry">1</div>
-                                <div class="img">2</div>
-                                <div class="img">3</div>
+                        <div class="popup__images">
+                            <div class="bootomcar pre"><img src="2.png"></div>
+                            <div class="carcar">
+                                <ul   class="popup__img">
+                                    <li><img src="999.jpg"></li>
+                                    <li><img src="777.jpg"></li>
+                                    <li><img src="999.jpg"></li>
+                                </ul>
                             </div>
-                            <div class="next n"><a href="#">Next</a></div>
-                        </div> -->
+                            <div class="bootomcar nex"><img src="1.png"></div>
+
+                        </div>
                     </div>
                 </div>
             </div>
         </dir>
         <dir  class="fotobox ">
             <div class="link_group">
-                <div  class="show_popup bottom_popap" href="">Галеasрея</div>
-                <!-- 	ТУТ НАЧИНАЕТСЯ ПОПАП -->
+                <div  class="show_popup bottom_popap"  href="">Собаки</div>
                 <div class="popup-wrapper">
                     <div class="popup photo_win">
-                        <div class="popup__close" href="">Close</div>
+                        <div class="popup__close" href="#">Close</div>
                         <h2>Галерея</h2>
-                        <!-- <div  class="img_wrap">
-                            <div class="prev n"><a href="#">Prev</a></div>
-                            <div class="slider">
-                                <div class="img curry">1</div>
-                                <div class="img">2</div>
-                                <div class="img">3</div>
+                        <div  class="popup__images">
+                            <div class="bootomcar pre"><img src="2.png"></div>
+                            <div class="carcar">
+                                <ul   class="popup__img">
+                                    <li><img src="999.jpg"></li>
+                                    <li><img src="777.jpg"></li>
+                                    <li><img src="999.jpg"></li>
+                                    <li><img src="777.jpg"></li>
+                                </ul>
                             </div>
-                            <div class="next n"><a href="#">Next</a></div>
-                        </div> -->
+                            <div class="bootomcar nex"><img src="1.png"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </dir>
+        <dir  class="fotobox ">
+            <div class="link_group">
+                <div  class="show_popup bottom_popap"  href="">Коты  и собаки</div>
+                <div class="popup-wrapper">
+                    <div class="popup photo_win">
+                        <div class="popup__close" href="#">Close</div>
+                        <h2>Галерея</h2>
+                        <div  class="popup__images">
+                            <div class="bootomcar pre"><img src="2.png"></div>
+                            <div class="carcar">
+                                <ul   class="popup__img">
+                                    <li><img src="999.jpg"></li>
+                                    <li><img src="777.jpg"></li>
+                                    <li><img src="999.jpg"></li>
+                                    <li><img src="777.jpg"></li>
+                                </ul>
+                            </div>
+                            <div class="bootomcar nex"><img src="1.png"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </dir>
+        <dir  class="fotobox ">
+            <div class="link_group">
+                <div  class="show_popup bottom_popap"  href="">Собаки и коты</div>
+                <div class="popup-wrapper">
+                    <div class="popup photo_win">
+                        <div class="popup__close" href="#">Close</div>
+                        <h2>Галерея</h2>
+                        <div  class="popup__images">
+                            <div class="bootomcar pre"><img src="2.png"></div>
+                            <div class="carcar">
+                                <ul   class="popup__img">
+                                    <li><img src="999.jpg"></li>
+                                    <li><img src="777.jpg"></li>
+                                    <li><img src="999.jpg"></li>
+                                    <li><img src="777.jpg"></li>
+                                </ul>
+                            </div>
+                            <div class="bootomcar nex"><img src="1.png"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </dir>
+        <dir  class="fotobox ">
+            <div class="link_group">
+                <div  class="show_popup bottom_popap"  href="">Котособаки</div>
+                <div class="popup-wrapper">
+                    <div class="popup photo_win">
+                        <div class="popup__close" href="#">Close</div>
+                        <h2>Галерея</h2>
+                        <div  class="popup__images">
+                            <div class="bootomcar pre"><img src="2.png"></div>
+                            <div class="carcar">
+                                <ul   class="popup__img">
+                                    <li><img src="999.jpg"></li>
+                                    <li><img src="777.jpg"></li>
+                                    <li><img src="999.jpg"></li>
+                                    <li><img src="777.jpg"></li>
+                                </ul>
+                            </div>
+                            <div class="bootomcar nex"><img src="1.png"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </dir>
+        <dir  class="fotobox ">
+            <div class="link_group">
+                <div  class="show_popup bottom_popap"  href="">Собакокоты</div>
+                <div class="popup-wrapper">
+                    <div class="popup photo_win">
+                        <div class="popup__close" href="#">Close</div>
+                        <h2>Галерея</h2>
+                        <div  class="popup__images">
+                            <div class="bootomcar pre"><img src="2.png"></div>
+                            <div class="carcar">
+                                <ul   class="popup__img">
+                                    <li><img src="999.jpg"></li>
+                                    <li><img src="777.jpg"></li>
+                                    <li><img src="999.jpg"></li>
+                                    <li><img src="777.jpg"></li>
+                                </ul>
+                            </div>
+                            <div class="bootomcar nex"><img src="1.png"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </dir>
+        <dir  class="fotobox ">
+            <div class="link_group">
+                <div  class="show_popup bottom_popap"  href="">Еноты</div>
+                <div class="popup-wrapper">
+                    <div class="popup photo_win">
+                        <div class="popup__close" href="#">Close</div>
+                        <h2>Галерея</h2>
+                        <div  class="popup__images">
+                            <div class="bootomcar pre"><img src="2.png"></div>
+                            <div class="carcar">
+                                <ul   class="popup__img">
+                                    <li><img src="999.jpg"></li>
+                                    <li><img src="777.jpg"></li>
+                                    <li><img src="999.jpg"></li>
+                                    <li><img src="777.jpg"></li>
+                                </ul>
+                            </div>
+                            <div class="bootomcar nex"><img src="1.png"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </dir>
+        <dir  class="fotobox ">
+            <div class="link_group">
+                <div  class="show_popup bottom_popap"  href="">Барсуки</div>
+                <div class="popup-wrapper">
+                    <div class="popup photo_win">
+                        <div class="popup__close" href="#">Close</div>
+                        <h2>Галерея</h2>
+                        <div  class="popup__images">
+                            <div class="bootomcar pre"><img src="2.png"></div>
+                            <div class="carcar">
+                                <ul   class="popup__img">
+                                    <li><img src="999.jpg"></li>
+                                    <li><img src="777.jpg"></li>
+                                    <li><img src="999.jpg"></li>
+                                    <li><img src="777.jpg"></li>
+                                </ul>
+                            </div>
+                            <div class="bootomcar nex"><img src="1.png"></div>
+
+                        </div>
                     </div>
                 </div>
             </div>

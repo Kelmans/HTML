@@ -7,37 +7,68 @@ $(function () {
         var popupWrapper = $(element.target.closest('.link_group')).find('.popup-wrapper')[0];
         $(popupWrapper).addClass("popup__wrapper_flex");
 
+        document.body.style.overflow = 'hidden';
+
+        var width1 = 950;
+        var count1 = 1;
+
+        var list1 = popupWrapper.querySelector('ul');
+        var listElems1 = popupWrapper.querySelectorAll('li');
+        var position1 = 0; // текущий сдвиг влево
+        var ck = 1;
+        var indexImg = 1;
+        var lengthMax = listElems1.length;
+        popupWrapper.querySelector('.pre').onclick = function() {
+
+
+            if(ck <= indexImg){
+                position1 = -width1 * (lengthMax-1);
+                list1.style.marginLeft = position1 + 'px';
+                ck = lengthMax;
+            }
+            else{
+                ck--;
+                position1 += width1;
+                list1.style.marginLeft = position1 + 'px';
+            }
+        };
+        popupWrapper.querySelector('.nex').onclick = function() {
+
+            if(ck >= lengthMax){
+                position1 = 0;
+                list1.style.marginLeft = position1 + 'px';
+                ck = 1;
+            }
+
+            else {position1 -= width1;
+                list1.style.marginLeft = position1 + 'px';
+                ck++;
+            }
+
+        };
+
     }
     function closePopup(element){
         var closeButton = $(element.target);
         var popupWrapper = closeButton.closest('.popup-wrapper');
         popupWrapper.removeClass("popup__wrapper_flex");
+        document.body.style.removeProperty( 'overflow');
+
     }
 
-    // $(function () {
-    // //script for popups
-    // $('a.show_popup').click(function () {
-    // 	$('div.'+$(this).attr("rel")).fadeIn(500);
-    // 	$("body").append("<div id='overlay'></div>");
-    // 	$('#overlay').show().css({'filter' : 'alpha(opacity=80)'});
-    // 	return false;
-    // });
-    // $('a.close').click(function () {
-    // 	$(this).parent().fadeOut(100);
-    // 	$('#overlay').remove('#overlay');
-    // 	return false;
-    // });
-
-
-    $('#show-more').click(function() {
-
-        $(".box2").toggleClass('open');
+    $('.show-more').click(function() {
+        $(".otziv").toggleClass('open');
+        var text = $('.show-more').val();
+        if(text == 'Show More'){
+            $('.show-more').val("Show Less");
+        }else{
+            $('.show-more').val("Show More");
+        }
         $(".rilOtzivblur").toggleClass('open_opacity');
 
     });
 
     $('.next').click(function(){
-        // var popup = $(.target).find('.popup');
         var currentImage = $('.img.curry');
         var currentImageIndex = currentImage.index();
         var nextImageIndex = currentImageIndex+1;
@@ -88,7 +119,4 @@ $(function () {
         position = Math.max(position - width * count, -width * (listElems.length - count));
         list.style.marginLeft = position + 'px';
     };
-
-
 });
-
