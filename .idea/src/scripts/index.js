@@ -1,10 +1,11 @@
 $(function () {
     $('.show_popup').click(showPopup);
-
+    $('.show-more').click(showMore) ;
     $('.popup__close').click(closePopup);
 
+
     function showPopup(element){
-        var popupWrapper = $(element.target.closest('.link_group')).find('.popup-wrapper')[0];
+        var popupWrapper = $(element.target.closest('.album')).find('.popup-wrapper')[0];
         $(popupWrapper).addClass("popup__wrapper_flex");
 
         document.body.style.overflow = 'hidden';
@@ -56,47 +57,21 @@ $(function () {
 
     }
 
-    $('.show-more').click(function() {
-        $(".otziv").toggleClass('open');
+    function showMore(element){
+        $(".comments__repository").toggleClass('open');
         var text = $('.show-more').val();
         if(text == 'Show More'){
             $('.show-more').val("Show Less");
         }else{
             $('.show-more').val("Show More");
         }
-        $(".rilOtzivblur").toggleClass('open_opacity');
+        $(".comment__blur").toggleClass('open_opacity');
 
-    });
+    };
 
-    $('.next').click(function(){
-        var currentImage = $('.img.curry');
-        var currentImageIndex = currentImage.index();
-        var nextImageIndex = currentImageIndex+1;
-        var nextImage = $('.img').eq(nextImageIndex);
-        currentImage.fadeOut(1000);
-        currentImage.removeClass('curry');
 
-        if(nextImageIndex == ($('.img:last').index()+1)){
-            $('.img').eq(0).fadeIn(1000);
-            $('.img').eq(0).addClass('curry');
-        } else{
-            nextImage.fadeIn(1000);
-            nextImage.addClass('curry');
-        }
-    });
-    $('.prev').click(function(){
-        var currentImage = $('.img.curry');
-        var currentImageIndex = $('.img.curry').index();
-        var prevImageIndex = currentImageIndex-1;
-        var prevImage = $('.img').eq(prevImageIndex);
 
-        currentImage.fadeOut(1000);
-        currentImage.removeClass('curry');
-        prevImage.fadeIn(1000);
-        prevImage.addClass('curry');
-    })
 
-    /* конфигурация */
     var width = 365; // ширина изображения
     var count = 3; // количество изображений
 
@@ -106,14 +81,14 @@ $(function () {
 
     var position = 0; // текущий сдвиг влево
 
-    carousel.querySelector('.prevs').onclick = function() {
+    carousel.querySelector('.previous').onclick = function() {
         // сдвиг влево
         // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
         position = Math.min(position + width * count, 0)
         list.style.marginLeft = position + 'px';
     };
 
-    carousel.querySelector('.nexts').onclick = function() {
+    carousel.querySelector('.following').onclick = function() {
         // сдвиг вправо
         // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
         position = Math.max(position - width * count, -width * (listElems.length - count));
