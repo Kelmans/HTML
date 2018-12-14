@@ -259,6 +259,16 @@ header {
     background: url(../img/5.jpg);
     margin: 5px;
 }
+.album:hover{
+    cursor: pointer;
+    text-align: center;
+    height: 200px;
+    width: 24%;
+    float: left;
+    background: url(../img/5.jpg);
+    margin: 5px;
+}
+
 
 .view_popap {
     opacity: 0;
