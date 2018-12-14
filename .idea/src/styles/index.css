@@ -367,18 +367,17 @@ header {
 
 .footer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     background: #eeee;
-    height: 100px;
+    height: 162px;
     margin-bottom: 10px;
-
     width: 1200px;
-    margin:  auto;
+    margin: auto;
 }
-.footer__description{
+.footer__description {
     padding: 10px;
     width: 200px;
-
     height: 80px;
 }
 
