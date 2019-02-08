@@ -1,0 +1,40 @@
+{namespace templates.components.comments}
+
+/**
+ *
+ * @param comments
+ */
+{template .comment}
+ <div class="comments content">
+        <div class="comments__headline">
+            <h1>ОТЗЫВЫ</h1>
+        </div>
+        <div  class="comments__repository">
+           {foreach $item in $comments}
+               {call .commentItem}
+                   {param baseClass} {$item.baseClass} {/param}
+                   {param classAvatar} {$item.classAvatar} {/param}
+                   {param headlineText} {$item.headlineText} {/param}
+                   {param text} {$item.text} {/param}
+               {/call}
+            {/foreach}
+        </div>
+        <input type="button"  name="buttonShow" class="show-more" value="Show More" >
+    </div>
+{/template}
+
+
+/**
+ *
+ * @param baseClass
+ * @param classAvatar
+ * @param headlineText
+ * @param text
+ */
+{template .commentItem}
+             <div class="{$baseClass}">
+                <div class="{$classAvatar}"> </div>
+                <div class="comment__text"> <h5>{$headlineText}</h5>
+                    <p>{$text}</p> </div>
+            </div>
+{/template}

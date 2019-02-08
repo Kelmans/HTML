@@ -6,6 +6,10 @@
     <link href="../styles/index.css" rel="stylesheet">
     <script type="text/javascript" src="../scripts/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="../scripts/index.js"></script>
+    <script type="text/javascript" src="templates/components/soyutils.js"></script>
+    <script type="text/javascript" src="templates/components/simple.js"></script>
+    <script type="text/javascript" src="templates/components/comments.js"></script>
+    <script type="text/javascript" src="templates/components/foroLibrary.js"></script>
 </head>
 <body>
 <div class="wrapper_header" >
@@ -25,231 +29,227 @@
             Ветеринарная клиника Зоовет решит любую проблему, если ваш питомец заболел или ему требуется квалифицированная врачебная помощь.
         </p></div>
         </div>
-        <div id="carousel" class="content__carousel">
-            <button class="content__carousel-arrow previous">⇦</button>
-            <div class="gallery">
-                <ul class="galery__images">
-                    <li><div class="galery__images-item galery__images-one"></div></li>
-                    <li><div class="galery__images-item galery__images-two"></div></li>
-                    <li><div class="galery__images-item galery__images-three"></div></li>
-                    <li><div class="galery__images-item galery__images-four"></div></li>
-                    <li><div class="galery__images-item galery__images-five"></div></li>
-                    <li><div class="galery__images-item galery__images-six"></div></li>
-                    <li><div class="galery__images-item galery__images-seven"></div></li>
-                </ul>
-            </div>
-            <button class="content__carousel-arrow following">⇨</button>
-        </div>
+        <script >
+            document.write(templates.components.simple.view({
+                carousel: [
+                    {class: 'galery__images-one'},
+                    {class: 'galery__images-two'},
+                    {class: 'galery__images-three'},
+                    {class: 'galery__images-four'},
+                    {class: 'galery__images-five'},
+                    {class: 'galery__images-six'},
+                    {class: 'galery__images-seven'}
+                ]
+            }))
+        </script>
     </div>
 </div>
 <div id="box2" class="wrapper__comments">
-    <div class="comments content">
-        <div class="comments__headline">
-            <h1>ОТЗЫВЫ</h1>
-        </div>
-        <div  class="comments__repository">
-            <div class="comment">
-                <div class="comment__avatar"> </div>
-                <div class="comment__text"> <h5>Юлия 01-12-2018</h5>
-                    <p>Добрый день. Не рекомендую данную клинику. Я предварительно записалась по телефону на осмотр кота 01.12.2018 на 10.30. Ко врачу пустили с опозданием в 20 минут. Все эти 20 минут кот кричал в переноске. Врач не представился и осмотрел кота. Врач не сказал, здоров ли мой кот, и не сказал каким образом мне предоставят результаты анализов. При оплате данных услуг у администратора мне также не сказали ничего относительно даты и способа получения анализов. У администратора постоянно была очередь.</p> </div>
-            </div>
-            <div class="comment">
-                <div class="comment__avatar"> </div>
-                <div class="comment__text"> <h5>Наталья 27-11-2018</h5>
-                    Огромная благодарность доктору Мягкову Ивану Игоревичу за чуткое отношение к нашей собачке Снеже и к нам в 3 часа утра. </div>
-            </div>
-            <div class="comment__blur">
-                <div class="comment__avatar"> </div>
-                <div class="comment__text"> <h5>Лариса 06-09-2018</h5>
-                    Хочу выразить благодарность врачу ХОРОШИЛОВУ МИХАИЛУ ЮРЬЕВИЧУ,! Михаил Юрьевич профессионал высокого уровня, хорошо лечил нашего кота Васю, всегда был готов подсказать и проконсультировать. Врач очень добрый и чуткий. Спасибо Вам большое за работу, желаем Вам всего самого доброго! </div>
-            </div>
-            <div class="comment">
-                <div class="comment__avatar"> </div>
-                <div class="comment__text"> <h5>Александра 27-08-2018</h5>
-                    В Новогиреево работает замечательный врач Самонов Николай Викторович. Моя собачуля чужих к себе не подпускает, а он нашей с ней общий язык и все процедуры провел безболезненно, для обоих ))) Спасибо! </div>
-            </div>
-        </div>
-        <input type="button"  name="buttonShow" class="show-more" value="Show More" >
-    </div>
+    <script >
+        document.write(templates.components.comments.comment({
+            comments: [
+                {baseClass:'comment', classAvatar: 'comment__avatar', headlineText: 'Юлия 01-12-2018', text: 'Добрый день. Не рекомендую данную клинику. Я предварительно записалась по телефону на осмотр кота 01.12.2018 на 10.30. Ко врачу пустили с опозданием в 20 минут. Все эти 20 минут кот кричал в переноске. Врач не представился и осмотрел кота. Врач не сказал, здоров ли мой кот, и не сказал каким образом мне предоставят результаты анализов. При оплате данных услуг у администратора мне также не сказали ничего относительно даты и способа получения анализов. У администратора постоянно была очередь.'},
+                {baseClass:'comment', classAvatar: 'comment__avatar', headlineText: 'Наталья 27-11-2018', text: 'Огромная благодарность доктору Мягкову Ивану Игоревичу за чуткое отношение к нашей собачке Снеже и к нам в 3 часа утра.'},
+                {baseClass:'comment__blur', classAvatar: 'comment__avatar', headlineText: 'Лариса 06-09-2018', text: 'Хочу выразить благодарность врачу ХОРОШИЛОВУ МИХАИЛУ ЮРЬЕВИЧУ,! Михаил Юрьевич профессионал высокого уровня, хорошо лечил нашего кота Васю, всегда был готов подсказать и проконсультировать. Врач очень добрый и чуткий. Спасибо Вам большое за работу, желаем Вам всего самого доброго! '},
+                {baseClass:'comment', classAvatar: 'comment__avatar', headlineText: 'Александра 27-08-2018', text: 'В Новогиреево работает замечательный врач Самонов Николай Викторович. Моя собачуля чужих к себе не подпускает, а он нашей с ней общий язык и все процедуры провел безболезненно, для обоих ))) Спасибо! '}
+            ]
+        }))
+    </script>
 </div>
 <div class="wrapper__foto_library">
-    <div id="box3" class="foto_library content">
-        <dir  class="album ">
-                <div  class="show_popup view_popap"  href="">Коты</div>
-                <div class="popup-wrapper">
-                    <div class="popup photo_win">
-                        <div class="popup__close" href="#">Close</div>
-                        <h2>Галерея</h2>
-                        <div class="popup__images">
-                            <div class="bootom_popup pre"></div>
-                            <div class="repository">
-                                <ul class="repository__img">
-                                    <li><div class="popup__img-item  foto999"> </div></li>
-                                    <li><div class="popup__img-item  foto777"> </div></li>
-                                    <li><div class="popup__img-item foto122 "> </div></li>
-                                </ul>
-                            </div>
-                            <div class="bootom_popup nex"></div>
+    <script >
+        document.write(templates.components.fotoLibrary.fotoLibrary({
+            fotoLibrar: [
+                {fonAlbum:'fonCat',nameAlbum: 'Коты', fotoAlbum:[{nameFoto:'foto999'},{nameFoto:'foto777'},{nameFoto:'foto122'}]},
+                {fonAlbum:'fonDog',nameAlbum: 'Собаки'},
+                {fonAlbum:'fonCavy',nameAlbum: 'Морские свинки'},
+                {fonAlbum:'fonMouse',nameAlbum: 'Мыши'},
+                {fonAlbum:'fonOwl',nameAlbum: 'Совы'},
+                {fonAlbum:'fonRabbit',nameAlbum: 'Кролики'},
+                {fonAlbum:'fonParrot',nameAlbum: 'Попугаи'},
+                {fonAlbum:'fonTurtle',nameAlbum: 'Черепахи'}
+            ]
 
-                        </div>
-                    </div>
-                </div>
-        </dir>
-        <dir  class="album ">
-                <div  class="show_popup view_popap"  href="">Собаки</div>
-                <div class="popup-wrapper">
-                    <div class="popup photo_win">
-                        <div class="popup__close" href="#">Close</div>
-                        <h2>Галерея</h2>
-                        <div  class="popup__images">
-                            <div class="bootom_popup pre"></div>
-                            <div class="repository">
-                                <ul   class="repository__img">
-                                    <li><div class="popup__img-item  foto999"> </div></li>
-                                    <li><div class="popup__img-item foto777 "> </div></li>
-                                    <li><div class="popup__img-item  foto123"> </div></li>
-                                    <li><div class="popup__img-item  foto122"> </div></li>
-                                </ul>
-                            </div>
-                            <div class="bootom_popup nex"></div>
+        }))
+    </script>
 
-                        </div>
-                    </div>
-                </div>
-        </dir>
-        <dir  class="album ">
-                <div  class="show_popup view_popap"  href="">Коты  и собаки</div>
-                <div class="popup-wrapper">
-                    <div class="popup photo_win">
-                        <div class="popup__close" href="#">Close</div>
-                        <h2>Галерея</h2>
-                        <div  class="popup__images">
-                            <div class="bootom_popup pre"></div>
-                            <div class="repository">
-                                <ul   class="repository__img">
-                                    <li><div class="popup__img-item  foto999"> </div></li>
-                                    <li><div class="popup__img-item  foto777"> </div></li>
-                                    <li><div class="popup__img-item  foto123"> </div></li>
-                                    <li><div class="popup__img-item  foto122"> </div></li>
-                                </ul>
-                            </div>
-                            <div class="bootom_popup nex"></div>
+    <!--<div id="box3" class="foto_library content">-->
+        <!--<div  class="album ">-->
+                <!--<div  class="show_popup view_popap"  href="">Коты</div>-->
+                <!--<div class="popup-wrapper">-->
+                    <!--<div class="popup photo_win">-->
+                        <!--<div class="popup__close" href="#">Close</div>-->
+                        <!--<h2>Галерея</h2>-->
+                        <!--<div class="popup__images">-->
+                            <!--<div class="bootom_popup pre"></div>-->
+                            <!--<div class="repository">-->
+                                <!--<ul class="repository__img">-->
+                                    <!--<li><div class="popup__img-item  foto999"> </div></li>-->
+                                    <!--<li><div class="popup__img-item  foto777"> </div></li>-->
+                                    <!--<li><div class="popup__img-item foto122 "> </div></li>-->
+                                <!--</ul>-->
+                            <!--</div>-->
+                            <!--<div class="bootom_popup nex"></div>-->
 
-                        </div>
-                    </div>
-                </div>
-        </dir>
-        <dir  class="album ">
-                <div  class="show_popup view_popap"  href="">Собаки и коты</div>
-                <div class="popup-wrapper">
-                    <div class="popup photo_win">
-                        <div class="popup__close" href="#">Close</div>
-                        <h2>Галерея</h2>
-                        <div  class="popup__images">
-                            <div class="bootom_popup pre"></div>
-                            <div class="repository">
-                                <ul   class="repository__img">
-                                    <li><div class="popup__img-item foto999 "> </div></li>
-                                    <li><div class="popup__img-item  foto777"> </div></li>
-                                    <li><div class="popup__img-item  foto123"> </div></li>
-                                    <li><div class="popup__img-item  foto122"> </div></li>
-                                </ul>
-                            </div>
-                            <div class="bootom_popup nex"></div>
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+        <!--</div>-->
+        <!--<div  class="album ">-->
+                <!--<div  class="show_popup view_popap"  href="">Собаки</div>-->
+                <!--<div class="popup-wrapper">-->
+                    <!--<div class="popup photo_win">-->
+                        <!--<div class="popup__close" href="#">Close</div>-->
+                        <!--<h2>Галерея</h2>-->
+                        <!--<div  class="popup__images">-->
+                            <!--<div class="bootom_popup pre"></div>-->
+                            <!--<div class="repository">-->
+                                <!--<ul   class="repository__img">-->
+                                    <!--<li><div class="popup__img-item  foto999"> </div></li>-->
+                                    <!--<li><div class="popup__img-item foto777 "> </div></li>-->
+                                    <!--<li><div class="popup__img-item  foto123"> </div></li>-->
+                                    <!--<li><div class="popup__img-item  foto122"> </div></li>-->
+                                <!--</ul>-->
+                            <!--</div>-->
+                            <!--<div class="bootom_popup nex"></div>-->
 
-                        </div>
-                    </div>
-                </div>
-        </dir>
-        <dir  class="album ">
-                <div  class="show_popup view_popap"  href="">Котособаки</div>
-                <div class="popup-wrapper">
-                    <div class="popup photo_win">
-                        <div class="popup__close" href="#">Close</div>
-                        <h2>Галерея</h2>
-                        <div  class="popup__images">
-                            <div class="bootom_popup pre"></div>
-                            <div class="repository">
-                                <ul   class="repository__img">
-                                    <li><div class="popup__img-item  foto999"> </div></li>
-                                    <li><div class="popup__img-item  foto777"> </div></li>
-                                    <li><div class="popup__img-item  foto123"> </div></li>
-                                    <li><div class="popup__img-item foto122 "> </div></li>
-                                </ul>
-                            </div>
-                            <div class="bootom_popup nex"></div>
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+        <!--</div>-->
+        <!--<div  class="album ">-->
+                <!--<div  class="show_popup view_popap"  href="">Коты  и собаки</div>-->
+                <!--<div class="popup-wrapper">-->
+                    <!--<div class="popup photo_win">-->
+                        <!--<div class="popup__close" href="#">Close</div>-->
+                        <!--<h2>Галерея</h2>-->
+                        <!--<div  class="popup__images">-->
+                            <!--<div class="bootom_popup pre"></div>-->
+                            <!--<div class="repository">-->
+                                <!--<ul   class="repository__img">-->
+                                    <!--<li><div class="popup__img-item  foto999"> </div></li>-->
+                                    <!--<li><div class="popup__img-item  foto777"> </div></li>-->
+                                    <!--<li><div class="popup__img-item  foto123"> </div></li>-->
+                                    <!--<li><div class="popup__img-item  foto122"> </div></li>-->
+                                <!--</ul>-->
+                            <!--</div>-->
+                            <!--<div class="bootom_popup nex"></div>-->
 
-                        </div>
-                    </div>
-                </div>
-        </dir>
-        <dir  class="album ">
-                <div  class="show_popup view_popap"  href="">Собакокоты</div>
-                <div class="popup-wrapper">
-                    <div class="popup photo_win">
-                        <div class="popup__close" href="#">Close</div>
-                        <h2>Галерея</h2>
-                        <div  class="popup__images">
-                            <div class="bootom_popup pre"></div>
-                            <div class="repository">
-                                <ul   class="repository__img">
-                                    <li><div class="popup__img-item  foto999"> </div></li>
-                                    <li><div class="popup__img-item  foto777"> </div></li>
-                                    <li><div class="popup__img-item  foto123"> </div></li>
-                                    <li><div class="popup__img-item  foto122"> </div></li>
-                                </ul>
-                            </div>
-                            <div class="bootom_popup nex"></div>
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+        <!--</div>-->
+        <!--<div  class="album ">-->
+                <!--<div  class="show_popup view_popap"  href="">Собаки и коты</div>-->
+                <!--<div class="popup-wrapper">-->
+                    <!--<div class="popup photo_win">-->
+                        <!--<div class="popup__close" href="#">Close</div>-->
+                        <!--<h2>Галерея</h2>-->
+                        <!--<div  class="popup__images">-->
+                            <!--<div class="bootom_popup pre"></div>-->
+                            <!--<div class="repository">-->
+                                <!--<ul   class="repository__img">-->
+                                    <!--<li><div class="popup__img-item foto999 "> </div></li>-->
+                                    <!--<li><div class="popup__img-item  foto777"> </div></li>-->
+                                    <!--<li><div class="popup__img-item  foto123"> </div></li>-->
+                                    <!--<li><div class="popup__img-item  foto122"> </div></li>-->
+                                <!--</ul>-->
+                            <!--</div>-->
+                            <!--<div class="bootom_popup nex"></div>-->
 
-                        </div>
-                    </div>
-                </div>
-        </dir>
-        <dir  class="album ">
-                <div  class="show_popup view_popap"  href="">Еноты</div>
-                <div class="popup-wrapper">
-                    <div class="popup photo_win">
-                        <div class="popup__close" href="#">Close</div>
-                        <h2>Галерея</h2>
-                        <div  class="popup__images">
-                            <div class="bootom_popup pre"></div>
-                            <div class="repository">
-                                <ul   class="repository__img">
-                                    <li><div class="popup__img-item  foto999"> </div></li>
-                                    <li><div class="popup__img-item  foto777"> </div></li>
-                                    <li><div class="popup__img-item foto123 "> </div></li>
-                                    <li><div class="popup__img-item  foto122"> </div></li>
-                                </ul>
-                            </div>
-                            <div class="bootom_popup nex"></div>
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+        <!--</div>-->
+        <!--<div  class="album ">-->
+                <!--<div  class="show_popup view_popap"  href="">Котособаки</div>-->
+                <!--<div class="popup-wrapper">-->
+                    <!--<div class="popup photo_win">-->
+                        <!--<div class="popup__close" href="#">Close</div>-->
+                        <!--<h2>Галерея</h2>-->
+                        <!--<div  class="popup__images">-->
+                            <!--<div class="bootom_popup pre"></div>-->
+                            <!--<div class="repository">-->
+                                <!--<ul   class="repository__img">-->
+                                    <!--<li><div class="popup__img-item  foto999"> </div></li>-->
+                                    <!--<li><div class="popup__img-item  foto777"> </div></li>-->
+                                    <!--<li><div class="popup__img-item  foto123"> </div></li>-->
+                                    <!--<li><div class="popup__img-item foto122 "> </div></li>-->
+                                <!--</ul>-->
+                            <!--</div>-->
+                            <!--<div class="bootom_popup nex"></div>-->
 
-                        </div>
-                    </div>
-                </div>
-        </dir>
-        <dir  class="album ">
-                <div  class="show_popup view_popap"  href="">Барсуки</div>
-                <div class="popup-wrapper">
-                    <div class="popup photo_win">
-                        <div class="popup__close" href="#">Close</div>
-                        <h2>Галерея</h2>
-                        <div  class="popup__images">
-                            <div class="bootom_popup pre"></div>
-                            <div class="repository">
-                                <ul   class="repository__img">
-                                    <li><div class="popup__img-item  foto999"> </div></li>
-                                    <li><div class="popup__img-item foto777 "> </div></li>
-                                    <li><div class="popup__img-item  foto123"> </div></li>
-                                    <li><div class="popup__img-item  foto122"> </div></li>
-                                </ul>
-                            </div>
-                            <div class="bootom_popup nex"></div>
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+        <!--</div>-->
+        <!--<div  class="album ">-->
+                <!--<div  class="show_popup view_popap"  href="">Собакокоты</div>-->
+                <!--<div class="popup-wrapper">-->
+                    <!--<div class="popup photo_win">-->
+                        <!--<div class="popup__close" href="#">Close</div>-->
+                        <!--<h2>Галерея</h2>-->
+                        <!--<div  class="popup__images">-->
+                            <!--<div class="bootom_popup pre"></div>-->
+                            <!--<div class="repository">-->
+                                <!--<ul   class="repository__img">-->
+                                    <!--<li><div class="popup__img-item  foto999"> </div></li>-->
+                                    <!--<li><div class="popup__img-item  foto777"> </div></li>-->
+                                    <!--<li><div class="popup__img-item  foto123"> </div></li>-->
+                                    <!--<li><div class="popup__img-item  foto122"> </div></li>-->
+                                <!--</ul>-->
+                            <!--</div>-->
+                            <!--<div class="bootom_popup nex"></div>-->
 
-                        </div>
-                    </div>
-                </div>
-        </dir>
-    </div>
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+        <!--</div>-->
+        <!--<div  class="album ">-->
+                <!--<div  class="show_popup view_popap"  href="">Еноты</div>-->
+                <!--<div class="popup-wrapper">-->
+                    <!--<div class="popup photo_win">-->
+                        <!--<div class="popup__close" href="#">Close</div>-->
+                        <!--<h2>Галерея</h2>-->
+                        <!--<div  class="popup__images">-->
+                            <!--<div class="bootom_popup pre"></div>-->
+                            <!--<div class="repository">-->
+                                <!--<ul   class="repository__img">-->
+                                    <!--<li><div class="popup__img-item  foto999"> </div></li>-->
+                                    <!--<li><div class="popup__img-item  foto777"> </div></li>-->
+                                    <!--<li><div class="popup__img-item foto123 "> </div></li>-->
+                                    <!--<li><div class="popup__img-item  foto122"> </div></li>-->
+                                <!--</ul>-->
+                            <!--</div>-->
+                            <!--<div class="bootom_popup nex"></div>-->
+
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+        <!--</div>-->
+        <!--<div  class="album ">-->
+                <!--<div  class="show_popup view_popap"  href="">Барсуки</div>-->
+                <!--<div class="popup-wrapper">-->
+                    <!--<div class="popup photo_win">-->
+                        <!--<div class="popup__close" href="#">Close</div>-->
+                        <!--<h2>Галерея</h2>-->
+                        <!--<div  class="popup__images">-->
+                            <!--<div class="bootom_popup pre"></div>-->
+                            <!--<div class="repository">-->
+                                <!--<ul   class="repository__img">-->
+                                    <!--<li><div class="popup__img-item  foto999"> </div></li>-->
+                                    <!--<li><div class="popup__img-item foto777 "> </div></li>-->
+                                    <!--<li><div class="popup__img-item  foto123"> </div></li>-->
+                                    <!--<li><div class="popup__img-item  foto122"> </div></li>-->
+                                <!--</ul>-->
+                            <!--</div>-->
+                            <!--<div class="bootom_popup nex"></div>-->
+
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
 </div>
 
 <dir id="box4" class="wrapper__footer">

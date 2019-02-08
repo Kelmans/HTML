@@ -1,0 +1,56 @@
+{namespace templates.components.fotoLibrary}
+
+/**
+ *
+ * @param fotoLibrar
+ */
+{template .fotoLibrary}
+<div id="box3" class="foto_library content">
+                 {foreach $item in $fotoLibrar}
+                        {call .album}
+                              {param nameAlbum} {$item.nameAlbum} {/param}
+                              {param fonAlbum} {$item.fonAlbum} {/param}
+                              {param fotoAlbum} {$item.fotoAlbum} {/param}
+                        {/call}
+                 {/foreach}
+</div>
+{/template}
+
+/**
+ *
+ * @param fonAlbum
+ * @param nameAlbum
+ * @param fotoAlbum
+ */
+{template .album}
+        <div  class="album {$fonAlbum}">
+             <div  class="show_popup view_popap"  href="">{$nameAlbum}</div>
+                             <div class="popup-wrapper">
+                                 <div class="popup photo_win">
+                                     <div class="popup__close" href="#">Close</div>
+                                     <h2>Галерея</h2>
+                                     <div class="popup__images">
+                                         <div class="bootom_popup pre"></div>
+                                         <div class="repository">
+                                             <ul class="repository__img">
+                                                  {foreach $item in $fotoAlbum}
+                                                           {call .nameImg}
+                                                               {param nameFoto} {$item.nameFoto} {/param}
+                                                         {/call}
+                                                   {/foreach}
+                                             </ul>
+                                         </div>
+                                         <div class="bootom_popup nex"></div>
+                                     </div>
+                                 </div>
+                             </div>
+                             </div>
+{/template}
+
+/**
+ *
+ * @param nameFoto
+ */
+{template .nameImg}
+<li><div class="popup__img-item  {$nameFoto}"> </div></li>
+{/template}

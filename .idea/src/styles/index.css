@@ -197,8 +197,7 @@ header {
 
 .comments__headline{
     background: #eeeeee;
-    width: 100%
-    margin auto;
+    height: 20px;
     text-align: center;
 }
 
@@ -250,7 +249,7 @@ header {
     background: #ffffff;
 }
 .foto_library{
-    height: 450px;
+    height: 425px;
 
 }
 .album{
@@ -258,7 +257,7 @@ header {
     height: 200px;
     width: 24%;
     float: left;
-    background: url(../img/5.jpg);
+
     margin: 5px;
 }
 .album:hover{
@@ -267,10 +266,40 @@ header {
     height: 200px;
     width: 24%;
     float: left;
-    background: url(../img/5.jpg);
+
     margin: 5px;
 }
 
+.fonCat{
+    background: url(../img/Cat.jpg);
+}
+.fonDog{
+    background: url(../img/dog.jpg);
+}
+
+.fonCavy{
+    background: url(../img/cavy.jpg);
+}
+
+.fonMouse{
+    background: url(../img/mouse.jpg);
+}
+
+.fonOwl{
+    background: url(../img/owl.jpg);
+}
+
+.fonRabbit{
+    background: url(../img/Rabbit.jpg);
+}
+
+.fonParrot{
+    background: url(../img/parrot.jpg);
+}
+
+.fonTurtle{
+    background: url(../img/turtle.jpg);
+}
 
 .view_popap {
     opacity: 0;
@@ -350,7 +379,7 @@ header {
     background: url(../img/close.png) no-repeat;
 }
 .open{
-    min-height: 500px;
+    min-height:465px;
 
 }
 .open_opacity{
