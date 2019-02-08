@@ -20,7 +20,7 @@
  *
  * @param fonAlbum
  * @param nameAlbum
- * @param fotoAlbum
+ * @param? fotoAlbum
  */
 {template .album}
         <div  class="album {$fonAlbum}">
@@ -33,11 +33,13 @@
                                          <div class="bootom_popup pre"></div>
                                          <div class="repository">
                                              <ul class="repository__img">
-                                                  {foreach $item in $fotoAlbum}
+                                                  {if $fotoAlbum}
+                                                    {foreach $item in $fotoAlbum}
                                                            {call .nameImg}
                                                                {param nameFoto} {$item.nameFoto} {/param}
                                                          {/call}
-                                                   {/foreach}
+                                                     {/foreach}
+                                                   {/if}
                                              </ul>
                                          </div>
                                          <div class="bootom_popup nex"></div>
@@ -52,5 +54,5 @@
  * @param nameFoto
  */
 {template .nameImg}
-<li><div class="popup__img-item  {$nameFoto}"> </div></li>
+<li><div class="popup__img-item {$nameFoto}"> </div></li>
 {/template}
