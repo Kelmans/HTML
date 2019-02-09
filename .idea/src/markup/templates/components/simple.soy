@@ -1,0 +1,30 @@
+{namespace templates.components.simple}
+
+/**
+ *
+ * @param carousel
+ */
+{template .view}
+<div id="carousel" class="content__carousel">
+    <button class="content__carousel-arrow previous">⇦</button>
+    <div class="gallery">
+    <ul class="galery__images">
+                {foreach $item in $carousel}
+                    {call .carouselItem}
+                        {param class} {$item.class} {/param}
+                    {/call}
+                {/foreach}
+            </ul>
+    </div>
+    <button class="content__carousel-arrow following">⇨</button>
+</div>
+{/template}
+
+
+/**
+ *
+ * @param class
+ */
+{template .carouselItem}
+<li><div class="galery__images-item {$class}"></div></li>
+{/template}
