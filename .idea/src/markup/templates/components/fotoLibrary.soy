@@ -8,9 +8,9 @@
 <div id="box3" class="foto_library content">
                  {foreach $item in $fotoLibrar}
                         {call .album}
-                              {param nameAlbum} {$item.nameAlbum} {/param}
-                              {param fonAlbum} {$item.fonAlbum} {/param}
-                              {param fotoAlbum} {$item.fotoAlbum} {/param}
+                              {param nameAlbum: $item.nameAlbum /}
+                              {param fonAlbum: $item.fonAlbum /}
+                              {param fotoAlbum: $item.fotoAlbum /}
                         {/call}
                  {/foreach}
 </div>
@@ -36,7 +36,7 @@
                                                   {if $fotoAlbum}
                                                     {foreach $item in $fotoAlbum}
                                                            {call .nameImg}
-                                                               {param nameFoto} {$item.nameFoto} {/param}
+                                                               {param nameFoto: $item.nameFoto /}
                                                          {/call}
                                                      {/foreach}
                                                    {/if}

@@ -272,6 +272,7 @@ header {
 
 .fonCat{
     background: url(../img/Cat.jpg);
+    background-size: cover;
 }
 .fonDog{
     background: url(../img/dog.jpg);
@@ -353,18 +354,103 @@ header {
     height: 550px;
 
 }
-.foto123 {
-    background-image: url("../img/123.jpg");
+.cat2 {
+    background-image: url("../img/cat2.jpg");
+    background-size: cover;
 }
-.foto122 {
-    background-image: url("../img/122.jpg");
+.cat3 {
+    background-image: url("../img/cat3.jpg");
+    background-size: cover;
 }
-.foto999 {
-    background-image: url("../img/999.jpg");
+.cat4 {
+    background-image: url("../img/cat4.jpg");
+    background-size: cover;
 }
-.foto777 {
-    background-image: url("../img/777.jpg");
+.Mouse2 {
+    background-image: url("../img/Mouse2.jpg");
+    background-size: cover;
 }
+.Mouse3 {
+    background-image: url("../img/Mouse3.jpg");
+    background-size: cover;
+}
+.Mouse4 {
+     background-image: url("../img/Mouse4.jpg");
+     background-size: cover;
+ }
+.dog2 {
+    background-image: url("../img/dog2.jpg");
+    background-size: cover;
+}
+.dog3 {
+    background-image: url("../img/dog3.jpg");
+    background-size: cover;
+}
+.dog4 {
+    background-image: url("../img/dog4.jpg");
+    background-size: cover;
+}
+.Cavy2 {
+     background-image: url("../img/Cavy2.jpg");
+     background-size: cover;
+ }
+.Cavy3 {
+    background-image: url("../img/Cavy3.jpg");
+    background-size: cover;
+}
+.Cavy4 {
+    background-image: url("../img/Cavy4.jpg");
+    background-size: cover;
+}
+.Rabbit2 {
+    background-image: url("../img/Rabbit2.jpg");
+    background-size: cover;
+}
+.Rabbit3 {
+    background-image: url("../img/Rabbit3.jpg");
+    background-size: cover;
+}
+.Rabbit4 {
+    background-image: url("../img/Rabbit4.jpg");
+    background-size: cover;
+}
+.Parrot2 {
+    background-image: url("../img/Parrot2.jpg");
+    background-size: cover;
+}
+.Parrot3 {
+    background-image: url("../img/Parrot3.jpg");
+    background-size: cover;
+}
+.Parrot4 {
+    background-image: url("../img/Parrot4.jpg");
+    background-size: cover;
+}
+.Turtle2 {
+    background-image: url("../img/Turtle2.jpg");
+    background-size: cover;
+}
+.Turtle3 {
+    background-image: url("../img/Turtle3.jpg");
+    background-size: cover;
+}
+.Turtle4 {
+    background-image: url("../img/Turtle4.jpg");
+    background-size: cover;
+}
+.Owl2 {
+    background-image: url("../img/Owl2.jpg");
+    background-size: cover;
+}
+.Owl3 {
+    background-image: url("../img/Owl3.jpg");
+    background-size: cover;
+}
+.Owl4 {
+    background-image: url("../img/Owl4.jpg");
+    background-size: cover;
+}
+
 .popup__close {
     width: 17px;
     height: 18px;
