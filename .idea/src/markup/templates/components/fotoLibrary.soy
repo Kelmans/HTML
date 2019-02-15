@@ -23,30 +23,30 @@
  * @param? fotoAlbum
  */
 {template .album}
-        <div  class="album {$fonAlbum}">
-             <div  class="show_popup view_popap"  href="">{$nameAlbum}</div>
-                             <div class="popup-wrapper">
-                                 <div class="popup photo_win">
-                                     <div class="popup__close" href="#">Close</div>
-                                     <h2>Галерея</h2>
-                                     <div class="popup__images">
-                                         <div class="bootom_popup pre"></div>
-                                         <div class="repository">
-                                             <ul class="repository__img">
-                                                  {if $fotoAlbum}
-                                                    {foreach $item in $fotoAlbum}
-                                                           {call .nameImg}
-                                                               {param nameFoto: $item.nameFoto /}
-                                                         {/call}
-                                                     {/foreach}
-                                                   {/if}
-                                             </ul>
-                                         </div>
-                                         <div class="bootom_popup nex"></div>
-                                     </div>
-                                 </div>
-                             </div>
-                             </div>
+<div  class="album {$fonAlbum}">
+    <div  class="show_popup view_popap"  href="">{$nameAlbum}</div>
+                 <div class="popup-wrapper">
+                     <div class="popup photo_win">
+                         <div class="popup__close" href="#">Close</div>
+                         <h2>Галерея</h2>
+                         <div class="popup__images">
+                             <div class="bootom_popup pre"></div>
+                             <div class="repository">
+                                 <ul class="repository__img">
+                                      {if $fotoAlbum}
+                                        {foreach $item in $fotoAlbum}
+                                               {call .nameImg}
+                                                   {param nameFoto: $item.nameFoto /}
+                                             {/call}
+                                         {/foreach}
+                                       {/if}
+                    </ul>
+                </div>
+            <div class="bootom_popup nex"></div>
+            </div>
+        </div>
+    </div>
+</div>
 {/template}
 
 /**

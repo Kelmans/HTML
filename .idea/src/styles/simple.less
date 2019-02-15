@@ -1,0 +1,104 @@
+.content__carousel {
+  position: relative;
+  width: 1100px;
+  padding: 10px 40px;
+  border: 1px solid #CCC;
+  border-radius: 15px;
+  background: #eee;
+  margin: auto;
+  height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.content__carousel-arrow {
+  position: absolute;
+
+  padding: 0;
+  background: #ddd;
+  border-radius: 15px;
+  border: 1px solid gray;
+  font-size: 24px;
+  line-height: 24px;
+  color: #444;
+  display: block;
+
+
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    background: #ccc;
+    cursor: pointer;
+  }
+
+}
+.previous {
+  left: 13px;
+}
+
+.following {
+  right: 7px;
+}
+
+
+.gallery {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  .galery__images {
+    height: 300px;
+    width: 9999px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: margin-left 250ms;
+    font-size: 0;
+    display: flex;
+
+    .galery__images-item {
+      width: 355px;
+      background-size: cover;
+      margin-left: 10px;
+      height: 300px;
+      display: inline-block;
+
+
+      }
+
+    }
+
+  }
+
+
+.galery__images- {
+
+  &:one {
+    background-image: url("../img/111.png");
+  }
+
+  &:two {
+    background-image: url("../img/222.png");
+  }
+
+  &:three {
+    background-image: url("../img/333.png");
+  }
+
+  &:four {
+    background-image: url("../img/444.png");
+  }
+
+  &:five {
+    background-image: url("../img/555.png");
+  }
+
+  &:six {
+    background-image: url("../img/666.png");
+  }
+
+  &:seven {
+    background-image: url("../img/3.png");
+  }
+}
