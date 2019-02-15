@@ -1,0 +1,51 @@
+.comments {
+  background: #eeee;
+}
+.comments .comments__headline {
+  background: #eeeeee;
+  height: 20px;
+  text-align: center;
+}
+.comments .comments__repository {
+  width: 100%;
+  background: #eeee;
+  height: 290px;
+  overflow: hidden;
+}
+.comments .show-more {
+  background: #381EA6;
+  color: #fff;
+  display: block;
+  width: 160px;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+}
+.comment {
+  margin-top: 15px;
+  background: #ffffff;
+  height: 100px;
+}
+.comment__avatar {
+  background-image: url(../img/ava.jpg);
+  width: 123px;
+  height: 100px;
+  background-size: 130px;
+  float: left;
+}
+.comment__text {
+  width: 1070px;
+  height: 100%;
+  float: right;
+}
+.comment__blur {
+  margin-top: 15px;
+  background: #ffffff;
+  height: 100px;
+  opacity: 0.3;
+}
+.open_opacity {
+  opacity: 1;
+}
