@@ -1,16 +1,42 @@
 .comments {
   background: #eeee;
 }
-.comments .comments__headline {
+.comments__headline {
   background: #eeeeee;
   height: 20px;
   text-align: center;
 }
-.comments .comments__repository {
+.comments__repository {
   width: 100%;
   background: #eeee;
   height: 290px;
   overflow: hidden;
+}
+.comments__repository .comment {
+  margin-top: 15px;
+  background: #ffffff;
+  height: 100px;
+}
+.comments__repository .comment__blur {
+  margin-top: 15px;
+  background: #ffffff;
+  height: 100px;
+  opacity: 0.3;
+}
+.comments__repository .comment__avatar {
+  background-image: url(../img/ava.jpg);
+  width: 123px;
+  height: 100px;
+  background-size: 130px;
+  float: left;
+}
+.comments__repository .comment__text {
+  width: 1070px;
+  height: 100%;
+  float: right;
+}
+.comments__repository .open_opacity {
+  opacity: 1;
 }
 .comments .show-more {
   background: #381EA6;
@@ -22,30 +48,4 @@
   text-align: center;
   margin: auto;
   cursor: pointer;
-}
-.comment {
-  margin-top: 15px;
-  background: #ffffff;
-  height: 100px;
-}
-.comment__avatar {
-  background-image: url(../img/ava.jpg);
-  width: 123px;
-  height: 100px;
-  background-size: 130px;
-  float: left;
-}
-.comment__text {
-  width: 1070px;
-  height: 100%;
-  float: right;
-}
-.comment__blur {
-  margin-top: 15px;
-  background: #ffffff;
-  height: 100px;
-  opacity: 0.3;
-}
-.open_opacity {
-  opacity: 1;
 }

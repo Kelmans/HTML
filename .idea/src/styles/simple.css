@@ -28,18 +28,18 @@
   background: #ccc;
   cursor: pointer;
 }
-.previous {
+.content__carousel .previous {
   left: 13px;
 }
-.following {
+.content__carousel .following {
   right: 7px;
 }
-.gallery {
+.content__carousel .gallery {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-.gallery .galery__images {
+.content__carousel .gallery__images {
   height: 300px;
   width: 9999px;
   margin: 0;
@@ -49,31 +49,31 @@
   font-size: 0;
   display: flex;
 }
-.gallery .galery__images .galery__images-item {
+.content__carousel .gallery__images-item {
   width: 355px;
   background-size: cover;
   margin-left: 10px;
   height: 300px;
   display: inline-block;
 }
-.galery__images-:one {
+.content__carousel .gallery__images-one {
   background-image: url("../img/11111.png");
 }
-.galery__images-:two {
+.content__carousel .gallery__images-two {
   background-image: url("../img/222.png");
 }
-.galery__images-:three {
+.content__carousel .gallery__images-three {
   background-image: url("../img/333.png");
 }
-.galery__images-:four {
+.content__carousel .gallery__images-four {
   background-image: url("../img/444.png");
 }
-.galery__images-:five {
+.content__carousel .gallery__images-five {
   background-image: url("../img/555.png");
 }
-.galery__images-:six {
+.content__carousel .gallery__images-six {
   background-image: url("../img/666.png");
 }
-.galery__images-:seven {
-  background-image: url("../img/3.png");
+.content__carousel .gallery__images-seven {
+  background-image: url("../img/3.jpg");
 }

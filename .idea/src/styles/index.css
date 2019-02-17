@@ -127,3 +127,17 @@ header {
     height: 35px;
 }
 
+.open{
+    min-height:465px;
+
+}
+
+
+.wrapper__footer{
+    background: #eeeeee;
+    margin-bottom: 5px;
+}
+
+
+
+

@@ -6,7 +6,7 @@ $(function () {
 
     function showPopup(element){
         var popupWrapper = $(element.target.closest('.album')).find('.popup-wrapper')[0];
-        $(popupWrapper).addClass("popup__wrapper_flex");
+        $(popupWrapper).addClass("popup-wrapper_flex");
 
         document.body.style.overflow = 'hidden';
 
@@ -52,7 +52,7 @@ $(function () {
     function closePopup(element){
         var closeButton = $(element.target);
         var popupWrapper = closeButton.closest('.popup-wrapper');
-        popupWrapper.removeClass("popup__wrapper_flex");
+        popupWrapper.removeClass("popup-wrapper_flex");
         document.body.style.removeProperty( 'overflow');
 
     }

@@ -8,7 +8,7 @@
 <div id="carousel" class="content__carousel">
     <button class="content__carousel-arrow previous">⇦</button>
     <div class="gallery">
-    <ul class="galery__images">
+    <ul class="gallery__images">
                 {foreach $item in $carousel}
                     {call .carouselItem}
                         {param class} {$item.class} {/param}
@@ -26,5 +26,5 @@
  * @param class
  */
 {template .carouselItem}
-<li><div class="galery__images-item {$class}"></div></li>
+<li><div class="gallery__images-item {$class}"></div></li>
 {/template}

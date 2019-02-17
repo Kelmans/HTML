@@ -1,20 +1,48 @@
 .comments {
   background: #eeee;
 
-  .comments__headline {
+  &__headline {
     background: #eeeeee;
     height: 20px;
     text-align: center;
   }
 
-  .comments__repository {
+  &__repository {
 
     width: 100%;
     background: #eeee;
     height: 290px;
     overflow: hidden;
 
+    .comment{
+      margin-top: 15px;
+      background: #ffffff;
+      height: 100px;
 
+      &__blur{
+        margin-top: 15px;
+        background: #ffffff;
+        height: 100px;
+        opacity: 0.3;
+
+      }
+      &__avatar {
+        background-image: url(../img/ava.jpg);
+        width: 123px;
+        height: 100px;
+        background-size: 130px;
+        float: left;
+      }
+      &__text{
+        width: 1070px;
+        height: 100%;
+        float: right;
+      }
+    }
+
+    .open_opacity{
+      opacity: 1;
+    }
   }
   .show-more{
     background: #381EA6;
@@ -27,36 +55,6 @@
     margin: auto;
     cursor: pointer;
   }
-}
-
-.comment{
-  margin-top: 15px;
-  background: #ffffff;
-  height: 100px;
 
 }
 
-
-.comment__avatar {
-  background-image: url(../img/ava.jpg);
-  width: 123px;
-  height: 100px;
-  background-size: 130px;
-  float: left;
-}
-.comment__text{
-  width: 1070px;
-  height: 100%;
-  float: right;
-}
-.comment__blur{
-  margin-top: 15px;
-  background: #ffffff;
-  height: 100px;
-  opacity: 0.3;
-
-}
-
-.open_opacity{
-  opacity: 1;
-}
