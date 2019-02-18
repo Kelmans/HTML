@@ -7,8 +7,12 @@
   background: #eee;
   margin: auto;
   height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .content__carousel-arrow {
   position: absolute;
@@ -45,8 +49,11 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  -webkit-transition: margin-left 250ms;
   transition: margin-left 250ms;
   font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .content__carousel .gallery__images-item {
@@ -77,3 +84,5 @@
 .content__carousel .gallery__images-seven {
   background-image: url("../img/3.jpg");
 }
+
+/*# sourceMappingURL=maps/simple.css.map */
