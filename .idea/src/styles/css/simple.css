@@ -1,0 +1,93 @@
+.content__carousel {
+  position: relative;
+  width: 1100px;
+  padding: 10px 40px;
+  border: 1px solid #CCC;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  background: #eee;
+  margin: auto;
+  height: 300px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.content__carousel-arrow {
+  position: absolute;
+  padding: 0;
+  background: #ddd;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  border: 1px solid gray;
+  font-size: 24px;
+  line-height: 24px;
+  color: #444;
+  display: block;
+}
+.content__carousel-arrow:focus {
+  outline: none;
+}
+.content__carousel-arrow:hover {
+  background: #ccc;
+  cursor: pointer;
+}
+.content__carousel .previous {
+  left: 13px;
+}
+.content__carousel .following {
+  right: 7px;
+}
+.content__carousel .gallery {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.content__carousel .gallery__images {
+  height: 300px;
+  width: 9999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-transition: margin-left 250ms;
+  -o-transition: margin-left 250ms;
+  transition: margin-left 250ms;
+  font-size: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.content__carousel .gallery__images-item {
+  width: 355px;
+  -webkit-background-size: cover;
+          background-size: cover;
+  margin-left: 10px;
+  height: 300px;
+  display: inline-block;
+}
+.content__carousel .gallery__images-one {
+  background-image: url("../../img/11111.png");
+}
+.content__carousel .gallery__images-two {
+  background-image: url("../../img/222.png");
+}
+.content__carousel .gallery__images-three {
+  background-image: url("../../img/333.png");
+}
+.content__carousel .gallery__images-four {
+  background-image: url("../../img/444.png");
+}
+.content__carousel .gallery__images-five {
+  background-image: url("../../img/555.png");
+}
+.content__carousel .gallery__images-six {
+  background-image: url("../../img/666.png");
+}
+.content__carousel .gallery__images-seven {
+  background-image: url("../../img/3.jpg");
+}
