@@ -11,7 +11,7 @@ if (typeof templates.components.fotoLibrary == 'undefined') { templates.componen
 
 
 templates.components.fotoLibrary.fotoLibrary = function(opt_data, opt_ignored) {
-  var output = '<div id="box3" class="foto_library content">';
+  var output = '<div id="box3" class="foto_library contents">';
   var itemList4 = opt_data.fotoLibrar;
   var itemListLen4 = itemList4.length;
   for (var itemIndex4 = 0; itemIndex4 < itemListLen4; itemIndex4++) {
@@ -27,7 +27,7 @@ if (goog.DEBUG) {
 
 
 templates.components.fotoLibrary.album = function(opt_data, opt_ignored) {
-  var output = '<div  class="album ' + soy.$$escapeHtml(opt_data.fonAlbum) + '"><div  class="show_popup view_popap "  href="">' + soy.$$escapeHtml(opt_data.nameAlbum) + '</div><div class="popup-wrapper"><div class="popup photo_win "><div class="popup__close" href="#">Close</div><h2>\u0413\u0430\u043B\u0435\u0440\u0435\u044F</h2><div class="popup__images "><div class="bootom_popup pre"></div><div class="repository"><ul class="repository__img ">';
+  var output = '<div  class="album ' + soy.$$escapeHtml(opt_data.fonAlbum) + '"><div  class="show_popup view_popap "  href="">' + soy.$$escapeHtml(opt_data.nameAlbum) + '</div><div class="popup-wrapper"><div class="popup photo_win "><div class="popup__close" href="#">Close</div><h2>\u0413\u0430\u043B\u0435\u0440\u0435\u044F</h2><div class="popup__images "><div class="bootom_popup pre"></div><div class="repository" id="content"><ul class="repository__img ">';
   if (opt_data.fotoAlbum) {
     var itemList19 = opt_data.fotoAlbum;
     var itemListLen19 = itemList19.length;

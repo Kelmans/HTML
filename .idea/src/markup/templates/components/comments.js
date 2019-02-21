@@ -11,7 +11,7 @@ if (typeof templates.components.comments == 'undefined') { templates.components.
 
 
 templates.components.comments.comment = function(opt_data, opt_ignored) {
-  var output = '<div class="comments content"><div class="comments__headline"><h1>\u041E\u0422\u0417\u042B\u0412\u042B</h1></div><div  class="comments__repository">';
+  var output = '<div class="comments contents"><div class="comments__headline"><h1>\u041E\u0422\u0417\u042B\u0412\u042B</h1></div><div  class="comments__repository">';
   var itemList4 = opt_data.comments;
   var itemListLen4 = itemList4.length;
   for (var itemIndex4 = 0; itemIndex4 < itemListLen4; itemIndex4++) {

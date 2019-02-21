@@ -5,7 +5,7 @@
  * @param fotoLibrar
  */
 {template .fotoLibrary}
-<div id="box3" class="foto_library content">
+<div id="box3" class="foto_library contents">
                  {foreach $item in $fotoLibrar}
                         {call .album}
                               {param nameAlbum: $item.nameAlbum /}
@@ -31,7 +31,7 @@
                          <h2>Галерея</h2>
                          <div class="popup__images ">
                              <div class="bootom_popup pre"></div>
-                             <div class="repository">
+                             <div class="repository" id="content">
                                  <ul class="repository__img ">
                                       {if $fotoAlbum}
                                         {foreach $item in $fotoAlbum}
