@@ -21,6 +21,7 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglifyjs": "^0.6.2",
     "gulp-watch": "^5.0.1",
+    "perfect-scrollbar": "^1.4.0",
     "rimraf": "^2.6.3",
     "serve-static": "^1.13.2",
     "tiny-lr": "^1.1.1"

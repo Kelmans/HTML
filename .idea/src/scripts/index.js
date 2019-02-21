@@ -94,4 +94,6 @@ $(function () {
         position = Math.max(position - width * count, -width * (listElems.length - count));
         list.style.marginLeft = position + 'px';
     };
+
+
 });
